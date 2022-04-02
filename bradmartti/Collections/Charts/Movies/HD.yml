@@ -59,6 +59,6 @@ collections:
   Best of 2020:
     template: { name: Best of, year: 2020, poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/RT_20.JPG }
   Best of 2021:
-    template: { name: Best of, year: 2021, poster: https://github.com/bradmartti/Plex-Meta-Manager-Configs/blob/master/bradmartti/Posters/Charts/RT_21.JPG }
+    template: { name: Best of, year: 2021, poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/RT_21.JPG }
   Best of 2022:
-    template: { name: Best of, year: 2022, poster: https://github.com/bradmartti/Plex-Meta-Manager-Configs/blob/master/bradmartti/Posters/Charts/RT_22.JPG }
+    template: { name: Best of, year: 2022, poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/RT_22.JPG }

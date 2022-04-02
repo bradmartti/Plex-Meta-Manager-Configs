@@ -19,14 +19,14 @@ collections:
     smart_filter:
       sort_by: added.desc
       all:
-        added: 10
+        added: 7
   Recently Released:
     url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Recently_Released.JPG
     sort_title: 02 Recently Released
     smart_filter:
       sort_by: release.desc
       all:
-        release: 25
+        release: 60
 # Trending
   Trending:
     sort_title: 03 Trending

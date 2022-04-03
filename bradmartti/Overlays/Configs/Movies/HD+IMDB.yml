@@ -209,7 +209,7 @@ collections:
       filepath.not: Atmos
     item_overlay: 
       name: 1080p-HDR-DolbyDigitalPlus
-      url: https://raw.githubusercontent.com/bradmartti/PMM/main/1080p-HDR-DolbyDigitalPlus.png
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-DolbyDigitalPlus.png
     build_collection: false
     #revert_overlay: true
 

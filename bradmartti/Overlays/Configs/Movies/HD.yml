@@ -1,1 +1,281 @@
+##########################################
+# Overlay combinations:                  #
+#   - 1080p                              #
+#   - 1080p HDR                          #
+#   - 1080p + Audio                      #
+#   - 1080p HDR + Audio                  #
+##########################################
 
+collections:
+  1080p:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    item_overlay: 
+      name: 1080p
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    item_overlay: 
+      name: 1080p-HDR
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-IMAX:
+    plex_search:
+      all:
+        resolution: 1080p
+    filters:
+      collection.not: IMDB Top 250
+      filepath: Imax
+    item_overlay: 
+      name: 1080p-IMAX
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-IMAX.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-IMAX:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: Imax
+    item_overlay: 
+      name: 1080p-HDR-IMAX
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-IMAX.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-DolbyDigital:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath: AC3
+      filepath.not: EAC3
+    item_overlay: 
+      name: 1080p-DolbyDigital
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-DolbyDigital.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-DolbyDigitalPlus:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath: EAC3
+      filepath.not: Atmos
+    item_overlay: 
+      name: 1080p-DolbyDigitalPlus
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-DolbyDigitalPlus.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-DolbyDigitalPlusAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath: Atmos
+      filepath.not: TrueHD
+    item_overlay: 
+      name: 1080p-DolbyDigitalPlusAtmos
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-DolbyDigitalPlusAtmos.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-DolbyTrueHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath: TrueHD
+      filepath.not: Atmos
+    item_overlay: 
+      name: 1080p-DolbyTrueHD
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-DolbyTrueHD.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-DolbyTrueHDAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath: Atmos
+      filepath.not: EAC3
+    item_overlay: 
+      name: 1080p-DolbyTrueHDAtmos
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-DolbyTrueHDAtmos.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-dtsX:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath: DTS-X
+    item_overlay: 
+      name: 1080p-dtsX
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-dtsX.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-dtsHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      collection.not: IMDB Top 250
+      filepath: DTS-HD MA
+    item_overlay: 
+      name: 1080p-dtsHD
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-dtsHD.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-DolbyDigital:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: AC3
+      filepath.not: EAC3
+    item_overlay: 
+      name: 1080p-HDR-DolbyDigital
+      url: https://https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-DolbyDigital.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-DolbyDigitalPlus:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: EAC3
+      filepath.not: Atmos
+    item_overlay: 
+      name: 1080p-HDR-DolbyDigitalPlus
+      url: https://raw.githubusercontent.com/bradmartti/PMM/main/1080p-HDR-DolbyDigitalPlus.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-DolbyDigitalPlusAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: Atmos
+      filepath.not: TrueHD
+    item_overlay: 
+      name: 1080p-HDR-DolbyDigitalPlusAtmos
+      url: https://https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-DolbyDigitalPlusAtmos.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-DolbyTrueHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: TrueHD
+      filepath.not: Atmos
+    item_overlay: 
+      name: 1080p-HDR-DolbyTrueHD
+      url: https://https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-DolbyTrueHD.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-DolbyTrueHDAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: Atmos
+      filepath.not: EAC3
+    item_overlay: 
+      name: 1080p-HDR-DolbyTrueHDAtmos
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-DolbyTrueHDAtmos.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-dtsX:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: DTS-X
+    item_overlay: 
+      name: 1080p-HDR-dtsX
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-dtsX.png
+    build_collection: false
+    #revert_overlay: true
+
+  1080p-HDR-dtsHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      collection.not: IMDB Top 250
+      filepath: DTS-HD MA
+    item_overlay: 
+      name: 1080p-HDR-dtsHD
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-dtsHD.png
+    build_collection: false
+    #revert_overlay: true

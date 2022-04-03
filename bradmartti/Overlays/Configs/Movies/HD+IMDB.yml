@@ -282,7 +282,7 @@ collections:
       filepath: DTS-HD MA
     item_overlay: 
       name: 1080p-HDR-dtsHD
-      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-dtsHD.png
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-dtsHD.png
     build_collection: false
     #revert_overlay: true
 

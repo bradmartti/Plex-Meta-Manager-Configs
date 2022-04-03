@@ -1,1 +1,28 @@
+#########################
+# Overlay combinations: #
+#   - 4K             #
+#   - 4K HDR         #
+#########################
 
+collections:
+  4K:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    item_overlay: 
+      name: 4K
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/UHD/4K.png
+    build_collection: false
+    revert_overlay: true
+
+  4K-HDR:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    item_overlay: 
+      name: 4K-HDR
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/UHD/4K-HDR.png
+    build_collection: false
+    revert_overlay: true

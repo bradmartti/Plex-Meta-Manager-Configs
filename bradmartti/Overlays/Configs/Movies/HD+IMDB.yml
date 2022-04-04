@@ -290,10 +290,9 @@ collections:
 # 1080p, HDR, AUDIO, IMDBTop250 #
 #################################
   IMDbTop250:
-    plex_search:
-      all:
-        resolution.not: 1080p
+    plex_all: true
     filters:
+      resolution.not: 1080p
       collection: IMDB Top 250
     item_overlay: 
       name: IMDBTop250
@@ -335,7 +334,7 @@ collections:
       - Atmos
       - DTS-X
       - DTS-HD
-    item_overlay: 
+    item_overlay:
       name: IMDBTop250-1080p-HDR
       url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD%2BIMDB/IMDBTop250-1080p-HDR.png
     build_collection: false

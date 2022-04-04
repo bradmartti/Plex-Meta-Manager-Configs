@@ -204,7 +204,7 @@ collections:
       filepath.not: TrueHD
     item_overlay: 
       name: 4K-HDR-DolbyDigitalPlusAtmos
-      url: https://https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/UHD/4K-HDR-DolbyDigitalPlusAtmos.png
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/UHD/4K-HDR-DolbyDigitalPlusAtmos.png
     build_collection: false
     #revert_overlay: true
 
@@ -218,7 +218,7 @@ collections:
       filepath.not: Atmos
     item_overlay: 
       name: 4K-HDR-DolbyTrueHD
-      url: https://https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/UHD/4K-HDR-DolbyTrueHD.png
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/UHD/4K-HDR-DolbyTrueHD.png
     build_collection: false
     #revert_overlay: true
 

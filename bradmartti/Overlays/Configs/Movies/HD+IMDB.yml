@@ -194,7 +194,7 @@ collections:
       filepath.not: EAC3
     item_overlay: 
       name: 1080p-HDR-DolbyDigital
-      url: https://https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-DolbyDigital.png
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD/1080p-HDR-DolbyDigital.png
     build_collection: false
     #revert_overlay: true
 

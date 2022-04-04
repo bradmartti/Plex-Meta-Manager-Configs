@@ -409,7 +409,7 @@ collections:
       filepath.not: TrueHD
     item_overlay: 
       name: IMDBTop250-1080p-DolbyDigitalPlusAtmos
-      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD%2BIMDB/IMDBTop250-1080p-DolbyDigitalAtmos.png
+      url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Overlays/Images/HD%2BIMDB/IMDBTop250-1080p-DolbyDigitalPlusAtmos.png
     build_collection: false
     #revert_overlay: true
 

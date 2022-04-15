@@ -16,6 +16,9 @@
 #   - Lossy_Mono
 #   - Lossy_Stereo
 #   - Lossy_Surround
+#   - Lossless_Mono
+#   - Lossless_Stereo
+#   - Lossless_Surround
 
 collections:
 ################

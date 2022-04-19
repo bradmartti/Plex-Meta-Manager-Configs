@@ -204,7 +204,6 @@ collections:
       all:
         collection: IMDB Top 250
     filters:
-      collection: IMDB Top 250
       filepath.regex: ^(?!.*HQ).*(AC3\b|Opus|MP3|PCM|AAC|DTS)(|-ES|-HD|-HD HRA| Atmos)( [3-9]\.)
     item_overlay: 
       name: Lossy_Surround_Top

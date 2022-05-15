@@ -47,42 +47,47 @@ overlays:
   # Unknown Quality (white)
   WEBDL:
     template:
-      - { name: overlay, g: sq, w: 3, x: 40, y: 1375 }
+      - { name: overlay, g: s, w: 1, x: 40, y: 1375 }
       - { name: regex, regex: ^(?!.*HQ).*(WEBDL) }
   Bluray:
     template:
-      - { name: overlay, g: sq, w: 3, x: 40, y: 1375 }
-      - { name: regex, regex: ^(?!.*HQ).*(Bluray|BLURAY) }
+      - { name: overlay, g: s, w: 2, x: 40, y: 1375 }
+      - { name: regex, regex: ^(?!.*HQ).*(Bluray) }
   Remux:
     template:
-      - { name: overlay, g: sq, w: 3, x: 40, y: 1375 }
-      - { name: regex, regex: ^(?!.*HQ).*(Remux|REMUX) }
+      - { name: overlay, g: s, w: 3, x: 40, y: 1375 }
+      - { name: regex, regex: ^(?!.*HQ).*(Remux) }
+    suppress_overlays: Bluray
+
   # Low Quality (red)
   LQ-WEBDL:
     template:
-      - { name: overlay, g: sq, w: 1, x: 40, y: 1375 }
+      - { name: overlay, g: lsq, w: 1, x: 40, y: 1375 }
       - { name: regex, regex: (LQ).*(\bWEBDL) }
   LQ-Bluray:
     template:
-      - { name: overlay, g: sq, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: (LQ).*(\bBluray|BLURAY) }
+      - { name: overlay, g: lsq, w: 2, x: 40, y: 1375 }
+      - { name: regex, regex: (LQ).*(\bBluray) }
   LQ-Remux:
     template:
-      - { name: overlay, g: sq, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: (LQ).*(\bRemux|REMUX) }
+      - { name: overlay, g: lsq, w: 3, x: 40, y: 1375 }
+      - { name: regex, regex: (LQ).*(\bRemux) }
+    suppress_overlays: LQ-Bluray
+
   # High Quality (green)
   HQ-WEBDL:
     template:
-      - { name: overlay, g: sq, w: 2, x: 40, y: 1375 }
+      - { name: overlay, g: hsq, w: 1, x: 40, y: 1375 }
       - { name: regex, regex: (HQ).*(\bWEBDL) }
   HQ-Bluray:
     template:
-      - { name: overlay, g: sq, w: 2, x: 40, y: 1375 }
-      - { name: regex, regex: (HQ).*(\bBluray|BLURAY) }
+      - { name: overlay, g: hsq, w: 2, x: 40, y: 1375 }
+      - { name: regex, regex: (HQ).*(\bBluray) }
   HQ-Remux:
     template:
-      - { name: overlay, g: sq, w: 2, x: 40, y: 1375 }
-      - { name: regex, regex: (HQ).*(\bRemux|REMUX) }
+      - { name: overlay, g: hsq, w: 3, x: 40, y: 1375 }
+      - { name: regex, regex: (HQ).*(\bRemux) }
+    suppress_overlays: HQ-Bluray
 
 # Lossy Audio (white)
   # mono

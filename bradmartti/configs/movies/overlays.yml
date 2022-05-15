@@ -187,10 +187,12 @@ overlays:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: (\bPQ\b) }
+    suppress_overlays: HDR
   HDR10:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10) }
+    suppress_overlays: HDR
   HDR10Plus:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }

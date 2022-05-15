@@ -48,15 +48,15 @@ overlays:
   WEBDL:
     template:
       - { name: overlay, g: s, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: ^(\b?!.*HQ\b).*(\bWEBDL) }
+      - { name: regex, regex: ^(?!.*\bHQ\b).*(\bWEBDL) }
   Bluray:
     template:
       - { name: overlay, g: s, w: 2, x: 40, y: 1375 }
-      - { name: regex, regex: ^(\b?!.*HQ\b).*(\bBluray) }
+      - { name: regex, regex: ^(?!.*\bHQ\b).*(\bBluray) }
   Remux:
     template:
       - { name: overlay, g: s, w: 3, x: 40, y: 1375 }
-      - { name: regex, regex: ^(\b?!.*HQ\b).*(\bRemux) }
+      - { name: regex, regex: ^(?!.*\bHQ\b).*(\bRemux) }
     suppress_overlays: Bluray
 
   # Low Quality (red)

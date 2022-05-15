@@ -48,45 +48,45 @@ overlays:
   WEBDL:
     template:
       - { name: overlay, g: s, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: ^(?!.*HQ).*(WEBDL) }
+      - { name: regex, regex: ^(\b?!.*HQ\b).*(\bWEBDL) }
   Bluray:
     template:
       - { name: overlay, g: s, w: 2, x: 40, y: 1375 }
-      - { name: regex, regex: ^(?!.*HQ).*(Bluray) }
+      - { name: regex, regex: ^(\b?!.*HQ\b).*(\bBluray) }
   Remux:
     template:
       - { name: overlay, g: s, w: 3, x: 40, y: 1375 }
-      - { name: regex, regex: ^(?!.*HQ).*(Remux) }
+      - { name: regex, regex: ^(\b?!.*HQ\b).*(\bRemux) }
     suppress_overlays: Bluray
 
   # Low Quality (red)
   LQ-WEBDL:
     template:
       - { name: overlay, g: lsq, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: (LQ).*(\bWEBDL) }
+      - { name: regex, regex: (\bLQ\b).*(\bWEBDL) }
   LQ-Bluray:
     template:
       - { name: overlay, g: lsq, w: 2, x: 40, y: 1375 }
-      - { name: regex, regex: (LQ).*(\bBluray) }
+      - { name: regex, regex: (\bLQ\b).*(\bBluray) }
   LQ-Remux:
     template:
       - { name: overlay, g: lsq, w: 3, x: 40, y: 1375 }
-      - { name: regex, regex: (LQ).*(\bRemux) }
+      - { name: regex, regex: (\bLQ\b).*(\bRemux) }
     suppress_overlays: LQ-Bluray
 
   # High Quality (green)
   HQ-WEBDL:
     template:
       - { name: overlay, g: hsq, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: (HQ).*(\bWEBDL) }
+      - { name: regex, regex: (\bHQ\b).*(\bWEBDL) }
   HQ-Bluray:
     template:
       - { name: overlay, g: hsq, w: 2, x: 40, y: 1375 }
-      - { name: regex, regex: (HQ).*(\bBluray) }
+      - { name: regex, regex: (\bHQ\b).*(\bBluray) }
   HQ-Remux:
     template:
       - { name: overlay, g: hsq, w: 3, x: 40, y: 1375 }
-      - { name: regex, regex: (HQ).*(\bRemux) }
+      - { name: regex, regex: (\bHQ\b).*(\bRemux) }
     suppress_overlays: HQ-Bluray
 
 # Lossy Audio (white)
@@ -179,15 +179,18 @@ overlays:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: false, dv: false }
   # high dynamic range (green)
-  HDR:
+  HDR: # for cases where filenames aren't present
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: true, dv: false }
+  PQ10:
+    template:
+      - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
+      - { name: regex, regex: (\bPQ\b) }
   HDR10:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10) }
-    suppress_overlays: HDR
   HDR10Plus:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
@@ -201,7 +204,7 @@ overlays:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: false, dv: true }
       - { name: regex, regex: ^(?!.*HDR).*(DV|DoVi) }
-  DV_HDR:
+  HDR10_DV:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: (DV|DoVi).*(HDR10) }
@@ -213,20 +216,20 @@ overlays:
   IMAX:
     template:
       - { name: overlay, g: ed, w: 5, x: 323, y: 1375 }
-      - { name: regex, regex: (IMAX) }
+      - { name: regex, regex: (\bIMAX\b) }
   Criterion:
     template:
       - { name: overlay, g: ed, w: 4, x: 323, y: 1375 }
-      - { name: regex, regex: (Criterion Collection) }
+      - { name: regex, regex: (\bCriterion.Collection\b) }
   Remastered:
     template:
       - { name: overlay, g: ed, w: 3, x: 323, y: 1375 }
-      - { name: regex, regex: (Remastered) }
+      - { name: regex, regex: (\bRemastered\b) }
   Special_ED:
     template:
       - { name: overlay, g: ed, w: 2, x: 323, y: 1375 }
-      - { name: regex, regex: (Special Edition) }
+      - { name: regex, regex: (\bSpecial.Edition\b) }
   Extended:
     template:
       - { name: overlay, g: ed, w: 1, x: 323, y: 1375 }
-      - { name: regex, regex: (Extended) }
+      - { name: regex, regex: (\bExtended\b) }

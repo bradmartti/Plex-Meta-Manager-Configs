@@ -179,21 +179,21 @@ overlays:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: false, dv: false }
   # high dynamic range (green)
-  HDR: # for cases where filenames aren't present
+  HDR-pink: # for cases where filenames aren't present
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: true, dv: false }
-  PQ10:
+  PQ10-pink:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: (\bPQ\b) }
     suppress_overlays: HDR
-  HDR10:
+  HDR10-pink:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10) }
     suppress_overlays: HDR
-  HDR10Plus:
+  HDR10Plus-pink:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10Plus) }
@@ -201,12 +201,12 @@ overlays:
       - HDR
       - HDR10
   # dolby vision (pink)
-  DV: 
+  DV-pink: 
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: false, dv: true }
       - { name: regex, regex: ^(?!.*HDR).*(DV|DoVi) }
-  HDR10_DV:
+  HDR10_DV-pink:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: (DV|DoVi).*(HDR10) }

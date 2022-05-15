@@ -205,7 +205,7 @@ overlays:
 # Edition Tags (blue)
   IMAX:
     template:
-      - { name: overlay, g: ed, w: 3, x: 323, y: 1375 }
+      - { name: overlay, g: ed, w: 5, x: 323, y: 1375 }
       - { name: regex, regex: (IMAX) }
   Criterion:
     template:
@@ -213,9 +213,13 @@ overlays:
       - { name: regex, regex: (Criterion Collection) }
   Remastered:
     template:
-      - { name: overlay, g: ed, w: 2, x: 323, y: 1375 }
+      - { name: overlay, g: ed, w: 3, x: 323, y: 1375 }
       - { name: regex, regex: (Remastered) }
   Special_ED:
     template:
-      - { name: overlay, g: ed, w: 1, x: 323, y: 1375 }
+      - { name: overlay, g: ed, w: 2, x: 323, y: 1375 }
       - { name: regex, regex: (Special Edition) }
+  Extended:
+    template:
+      - { name: overlay, g: ed, w: 1, x: 323, y: 1375 }
+      - { name: regex, regex: (Extended) }

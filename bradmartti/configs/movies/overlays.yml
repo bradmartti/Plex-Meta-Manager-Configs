@@ -179,40 +179,39 @@ overlays:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: false, dv: false }
   # high dynamic range (green)
-  HDR-pink: # for cases where filenames aren't present
+  HDR-green: # for cases where filenames aren't present
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: dr, hdr: true, dv: false }
-  PQ10-pink:
+  PQ10-green:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: (\bPQ\b) }
-    suppress_overlays: HDR-pink
-  HDR10-pink:
+    suppress_overlays: HDR-green
+  HDR10-green:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10) }
-    suppress_overlays: HDR-pink
-  HDR10Plus-pink:
+    suppress_overlays: HDR-green
+  HDR10Plus-green:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10Plus) }
     suppress_overlays: 
-      - HDR-pink
-      - HDR10-pink
+      - HDR-green
+      - HDR10-green
   # dolby vision (pink)
-  DV-pink: 
+  DV-green: 
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
-      - { name: dr, hdr: false, dv: true }
       - { name: regex, regex: ^(?!.*HDR).*(DV|DoVi) }
-  HDR10_DV-pink:
+  HDR10_DV-green:
     template:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: (DV|DoVi).*(HDR10) }
     suppress_overlays: 
-      - DV-pink
-      - HDR-pink
+      - DV-green
+      - HDR-green
 
 # Edition Tags (blue)
   IMAX:

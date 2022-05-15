@@ -188,6 +188,13 @@ overlays:
       - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
       - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10) }
     suppress_overlays: HDR
+  HDR10Plus:
+    template:
+      - { name: overlay, g: dr, w: 1, x: 395, y: 40 }
+      - { name: regex, regex: ^(?!.*DV|DoVi).*(HDR10Plus) }
+    suppress_overlays: 
+      - HDR
+      - HDR10
   # dolby vision (pink)
   DV: 
     template:

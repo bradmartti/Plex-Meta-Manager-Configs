@@ -21,15 +21,15 @@ templates:
   lossy:
     plex_all: true
     filters:
-      filepath.regex: (AC3\b|Opus|MP3|PCM|AAC|DTS)(|-ES|-HD|-HD HRA| Atmos)( <<ch>>\.)
+      filepath.regex: (?i)(AC3\b|Opus|MP3|PCM|AAC|DTS)(|-ES|-HD|-HD HRA| Atmos)( <<ch>>\.)
   lac:
     plex_all: true
     filters:
-      filepath.regex: (TrueHD|DTS-HD MA|DTS-X|FLAC)(| Atmos)( <<ch>>\.)
+      filepath.regex: (?i)(TrueHD|DTS-HD MA|DTS-X|FLAC)(| Atmos)( <<ch>>\.)
   regex:
     plex_all: true
     filters:
-      filepath.regex: <<regex>>
+      filepath.regex: (?i)<<regex>>
 
 overlays:
 # backdrop gradient to make overlays consistantly readable
@@ -200,17 +200,17 @@ overlays:
 # Edition Tags (blue)
   IMAX:
     template:
-      - { name: overlay, g: ed, w: 1, x: 323.5, y: 1375 }
-      - { name: regex, regex: (IMAX|Imax) }
+      - { name: overlay, g: ed, w: 3, x: 323, y: 1375 }
+      - { name: regex, regex: (IMAX) }
   Criterion:
     template:
-      - { name: overlay, g: ed, w: 1, x: 323.5, y: 1375 }
-      - { name: regex, regex: (Criterion.Collection|CRITERION) }
+      - { name: overlay, g: ed, w: 4, x: 323, y: 1375 }
+      - { name: regex, regex: (Criterion Collection) }
   Remastered:
     template:
-      - { name: overlay, g: ed, w: 1, x: 323.5, y: 1375 }
-      - { name: regex, regex: (Remastered|REMASTERED) }
+      - { name: overlay, g: ed, w: 2, x: 323, y: 1375 }
+      - { name: regex, regex: (Remastered) }
   Special_ED:
     template:
-      - { name: overlay, g: ed, w: 1, x: 323.5, y: 1375 }
-      - { name: regex, regex: (Special.Edition|SPECIAL.EDITION) }
+      - { name: overlay, g: ed, w: 1, x: 323, y: 1375 }
+      - { name: regex, regex: (Special Edition) }

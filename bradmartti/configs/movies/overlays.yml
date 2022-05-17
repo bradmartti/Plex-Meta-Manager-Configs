@@ -6,8 +6,8 @@ templates:
       url: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/overlays/<<overlay_name>>.png
       group: <<g>>
       weight: <<w>>
-      x_coordinate: <<x>>
-      y_coordinate: <<y>>
+      horizontal_offset: <<x>>
+      vertical_offset: <<y>>
   res:
     plex_search:
       all:

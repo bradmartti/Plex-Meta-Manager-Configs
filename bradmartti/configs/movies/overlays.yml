@@ -21,11 +21,11 @@ templates:
   lossy:
     plex_all: true
     filters:
-      filepath.regex: (?i)(AC3\b|Opus|MP3|PCM|AAC|DTS)(|-ES|-HD|-HD HRA| Atmos)( <<ch>>\.)
+      filepath.regex: (?i)(AC3\b|\bOpus\b|MP3|PCM|AAC|DTS)(|-ES|-HD|-HD.HRA|.Atmos)(.<<ch>>\.)
   lac:
     plex_all: true
     filters:
-      filepath.regex: (?i)(TrueHD|DTS-HD MA|DTS-X|FLAC)(| Atmos)( <<ch>>\.)
+      filepath.regex: (?i)(TrueHD|DTS-HD.MA|DTS-X|FLAC)(|.Atmos)(.<<ch>>\.)
   regex:
     plex_all: true
     filters:

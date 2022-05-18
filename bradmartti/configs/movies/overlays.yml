@@ -43,7 +43,7 @@ overlays:
     imdb_chart: top_movies
   # more to come...
 
-# Source Quality (Enabling renaming of LQ, HQ, HQ-WEBDL, and HQ-Remux source quality formats is required. --> https://trash-guides.info/Radarr/Radarr-collection-of-custom-formats/)
+# Source Quality (Enabling renaming of LQ, HQ, HQ-WEBDL, and HQ-Remux source quality formats is required for quality grouping. --> https://trash-guides.info/Radarr/Radarr-collection-of-custom-formats/)
   # Unknown Quality (white)
   WEBDL:
     template:
@@ -200,7 +200,6 @@ overlays:
     suppress_overlays: 
       - HDR-green
       - HDR10-green
-  # dolby vision (pink)
   DV-green: 
     template:
       - { name: ov, g: dr, w: 1, x: 395, y: 40 }

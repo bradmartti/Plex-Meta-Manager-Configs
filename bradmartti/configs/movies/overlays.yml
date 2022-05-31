@@ -42,7 +42,7 @@ overlays:
     template: { name: ov, g: charts, w: 4, x: 679, y: 1070 }
     imdb_chart: 
       - top_movies 
-      - popular movies
+      - popular_movies
     suppress_overlays:
       - IMDB_rating_top
       - IMDB_rating_popular

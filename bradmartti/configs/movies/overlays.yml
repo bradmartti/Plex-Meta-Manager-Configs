@@ -37,11 +37,33 @@ overlays:
     template: { name: ov, g: gradient, w: 100, x: 0, y: 0 }
     plex_all: true    
 
-# Charts
-  IMDB_Top_250:
-    template: { name: ov, g: charts, w: 1, x: 700, y: 1375 }
+# Charts\Ratings
+  IMDB_rating_top_popular:
+    template: { name: ov, g: charts, w: 4, x: 679, y: 1070 }
+    imdb_chart: 
+      - top_movies 
+      - popular movies
+    suppress_overlays:
+      - IMDB_rating_top
+      - IMDB_rating_popular
+  IMDB_rating_top:
+    template: { name: ov, g: charts, w: 3, x: 679, y: 1070 }
     imdb_chart: top_movies
-  # more to come...
+  IMDB_rating_popular:
+    template: { name: ov, g: charts, w: 2, x: 679, y: 1070 }
+    imdb_chart: popular_movies    
+  IMDB_rating:
+    plex_all: true 
+    template: { name: ov, g: charts, w: 1, x: 679, y: 1370 }
+  critic_rating:
+    plex_all: true
+    overlay:
+      name: text(critic_rating)
+      horizontal_offset: 755
+      vertical_offset: 1398
+      font: fonts/Inter-SemiBold.ttf
+      font_size: 52
+      font_color: "#FFFFFF"
 
 # Source Quality (Enabling renaming of LQ, HQ, HQ-WEBDL, and HQ-Remux source quality formats is required for quality grouping. --> https://trash-guides.info/Radarr/Radarr-collection-of-custom-formats/)
   # Unknown Quality (white)

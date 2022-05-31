@@ -238,21 +238,21 @@ overlays:
 # Edition Tags (blue)
   IMAX:
     template:
-      - { name: ov, g: ed, w: 5, x: 323, y: 1375 }
+      - { name: ov, g: ed, w: 5, x: 314, y: 1375 }
       - { name: regex, regex: (\bIMAX\b) }
   Criterion:
     template:
-      - { name: ov, g: ed, w: 4, x: 323, y: 1375 }
+      - { name: ov, g: ed, w: 4, x: 314, y: 1375 }
       - { name: regex, regex: (\bCriterion.Collection\b) }
   Remastered:
     template:
-      - { name: ov, g: ed, w: 3, x: 323, y: 1375 }
+      - { name: ov, g: ed, w: 3, x: 314, y: 1375 }
       - { name: regex, regex: (\bRemastered\b) }
   Special_ED:
     template:
-      - { name: ov, g: ed, w: 2, x: 323, y: 1375 }
+      - { name: ov, g: ed, w: 2, x: 314, y: 1375 }
       - { name: regex, regex: (\bSpecial.Edition\b) }
   Extended:
     template:
-      - { name: ov, g: ed, w: 1, x: 323, y: 1375 }
+      - { name: ov, g: ed, w: 1, x: 314, y: 1375 }
       - { name: regex, regex: (\bExtended\b) }

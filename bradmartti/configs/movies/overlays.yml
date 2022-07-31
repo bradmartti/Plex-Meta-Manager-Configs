@@ -70,7 +70,7 @@ overlays:
   WEBDL:
     template:
       - { name: ov, g: s, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: ^(?!.*\bHQ\b).*(\bWEBDL) }
+      - { name: regex, regex: ^(?!.*\bHQ\b).*(\bWEB) }
   Bluray:
     template:
       - { name: ov, g: s, w: 2, x: 40, y: 1375 }
@@ -85,7 +85,7 @@ overlays:
   LQ-WEBDL:
     template:
       - { name: ov, g: lsq, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: (\bLQ\b).*(\bWEBDL) }
+      - { name: regex, regex: (\bLQ\b).*(\bWEB) }
   LQ-Bluray:
     template:
       - { name: ov, g: lsq, w: 2, x: 40, y: 1375 }
@@ -100,7 +100,7 @@ overlays:
   HQ-WEBDL:
     template:
       - { name: ov, g: hsq, w: 1, x: 40, y: 1375 }
-      - { name: regex, regex: (\bHQ\b).*(\bWEBDL) }
+      - { name: regex, regex: (\bHQ\b).*(\bWEB) }
   HQ-Bluray:
     template:
       - { name: ov, g: hsq, w: 2, x: 40, y: 1375 }
